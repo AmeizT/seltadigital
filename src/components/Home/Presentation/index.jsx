@@ -19,7 +19,7 @@ export default function Presentation({ presentation }){
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size="32px" pt={3} variant={700} leading="1.1" pos="center">
+                            <Text as="h3" size="40px" pt={3} variant={700} leading="1.1" pos="center">
                                 {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>

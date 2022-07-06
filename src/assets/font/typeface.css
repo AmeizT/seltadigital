@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./gilroy/Gilroy-Regular.woff') format('woff'),
+        url('./gilroy/Gilroy-Regular.ttf') format('ttf'),
+        url('./gilroy/Gilroy-Regular.eot') format('eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('./metropolis/metropolis-regular.woff2') format('woff2'),
+        url('./metropolis/metropolis-regular.woff') format('woff'),
+        url('./metropolis/metropolis-regular.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jakarta Sans';
+    src: url('./jakarta/PlusJakartaSans-Medium.woff2') format('woff2'),
+         url('./jakarta/PlusJakartaSans-Medium.woff') format('woff');
+
+}
+
+@font-face {
+    font-family: 'Archia';
+    src: url('./archia/archia-regular-webfont.woff') format('woff'),
+        url('./archia/archia-regular-webfont.woff2') format('woff2'),
+        url('./archia/archia-regular-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
