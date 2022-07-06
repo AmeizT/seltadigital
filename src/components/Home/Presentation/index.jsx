@@ -19,18 +19,18 @@ export default function Presentation({ presentation }){
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size="32px" pt={3} variant={700} leading="1.1" pos="center">
+                            <Text as="h3" size="32px" pt={2} variant={700} leading="1.1" pos="center">
                                 {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>
 
-                        <Item pt={3} posx="center">
+                        <Item pt={2} posx="center">
                             <Text pos="center">
                                 {presentation.content}
                             </Text>
                         </Item>
 
-                        <Item pt={3} posx="center">
+                        <Item pt={2} posx="center">
                             <Button
                             space="10px 20px"
                             color="var(--snow20)"

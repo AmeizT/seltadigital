@@ -6,7 +6,7 @@ let presentations = [
         name: 'Selta Digital',
         topic: 'It all starts with',
         topic2: 'Hello, world!',
-        content: 'Hello, world! We\'re a small and talented team of remote designers & developers working together to build some cool stuff on the web.',
+        content: 'We\'re a small and talented team of remote designers & developers working together to build some cool stuff on the web.',
         action: 'Let\'s build your app',
         paint: '#e9ecd5',
     },
