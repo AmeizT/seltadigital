@@ -1,7 +1,8 @@
 import styled, {css} from 'styled-components'
-import { Border, BoxLayout } from '../Common';
+import { Alignment, Border, BoxLayout } from '../Common';
 
 export const MainBar = styled.div `
+    ${Alignment}
     ${BoxLayout}
     ${Border}
 

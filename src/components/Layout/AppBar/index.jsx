@@ -11,9 +11,7 @@ function AppBar(){
         ht="var(--bar10)"
         pos="fixed"
         view="flex" 
-        posv="center"
-        place="top"
-        border="base">
+        posv="center">
             <Container>
                 Header
             </Container>

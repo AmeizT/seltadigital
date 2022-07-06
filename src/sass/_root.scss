@@ -67,10 +67,10 @@
         'Syne', 
         'Segoe UI',
         sans-serif;
-    --space10: .25rem;
-    --space20: .5rem;
-    --space30: .75rem;
-    --space40: 1rem;
+    --space-xxs: .25rem;
+    --space-xs: .5rem;
+    --space-sm: .75rem;
+    --space-md: 1.25rem;
     --space50: 2rem;
     --space90: 8rem;
     --radius-xxs: .125rem; 
@@ -90,10 +90,10 @@
     --xxs: .25rem;
     --xs: .5rem;
     --sm: .75rem;
-    --md: 1rem;
-    --lg: 1.125rem;
-    --xl: 1.5rem;
-    --xxl: 1.75rem;
+    --md: 1.25rem;
+    --lg: 1.5rem;
+    --xl: 1.75rem;
+    --xxl: 2rem;
     --xxxl: 3.5rem;
     --zoom00: scale(0);
     --zoom10: scale(1);
@@ -124,7 +124,6 @@ body {
         weight: 500;
         family: var(--typeface);
     }
-    font-feature-settings: 'ss02';
     text-rendering: optimizeSpeed;
     line-height: 1.333;
     color: var(--dark40);

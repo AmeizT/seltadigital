@@ -1,7 +1,9 @@
 import styled, { css } from 'styled-components'
 import { BoxLayout, Alignment, Border, Space, Radius } from '../Common'
 
-export const List = styled.ul `
+export const List = styled.ul.attrs({
+    role: 'list',
+}) `
     ${BoxLayout}
     ${Alignment}
     ${Space}
