@@ -1,0 +1,28 @@
+{
+  "name": "seltadigital",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sanity/client": "^3.3.2",
+    "@sanity/image-url": "^1.0.1",
+    "babel-preset-next": "^1.4.0",
+    "moment": "^2.29.3",
+    "next": "12.2.0",
+    "next-sanity": "^0.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.0"
+  }
+}
