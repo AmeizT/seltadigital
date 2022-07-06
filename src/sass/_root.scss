@@ -56,7 +56,7 @@
     --ease40: 400ms ease-in-out;
     --ease50: 500ms ease-in-out;
     --typeface:
-        'Fira Sans', 
+        'IBM Plex Sans', 
         'Inter',
         'Segoe UI', 
         sans-serif;
@@ -119,7 +119,7 @@ body {
     margin: 0;
     font: {
         size: var(--text60);
-        weight: 400;
+        weight: 500;
         family: var(--typeface);
     }
     text-rendering: optimizeSpeed;

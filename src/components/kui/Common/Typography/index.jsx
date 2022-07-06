@@ -151,11 +151,6 @@ export const Typography = css`
                 return css`
                     font-weight: 900;
                 `
-            
-            default:
-                return css`
-                    font-weight: 400;
-                `
         }
     }}
     

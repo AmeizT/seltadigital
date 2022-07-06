@@ -10,17 +10,17 @@ export default function Presentation({ presentation }){
         posv="center"
         snap="start"
         snapStop="always"
-        paint="#e6f3e6">
+        paint={presentation.paint}>
             <Container space="var(--bar10) var(--md)">
                 <Segment>
                     <Stack dn="column">
                         <Item dn="column" posx="center">
-                            <Text as="small" pos="center">
+                            <Text as="small" prefers="upper" pos="center">
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size="40px" pos="center" variant={700} leading="1.1">
-                                {presentation.topic}
+                            <Text as="h3" size="32px" pt={3} variant={700} leading="1.1" pos="center">
+                                {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>
 
