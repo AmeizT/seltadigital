@@ -13,10 +13,12 @@ let presentations = [
 
     {
         id: uuid(),
-        name: 'Been there, done that.',
-        topic: 'Let the work speak.',
+        name: 'Featured Projects',
         content: 'We are held in high repute by our clients and our professional timeline ranges from simple static websites to advanced e-commerce apps.',
         action: 'See all works',
+        paint: 'var(--dark90)',
+        image: '/code.jpg', 
+        position: 'center center',
     }
 ]
 

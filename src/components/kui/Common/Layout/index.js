@@ -110,7 +110,7 @@ export const BoxLayout = css`
                     }
                 `
 
-            case "fog":
+            case "dark":
                 return css`
                     background: #18191a90;
                     backdrop-filter: blur(10px);

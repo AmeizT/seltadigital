@@ -101,7 +101,7 @@ export const BackDrop = styled(View)`
         switch(props.variant){
             case 'night':
                 return css`
-                    background: #00000080;
+                    background: #000000b8;
                 `
 
             case 'dark':
@@ -112,6 +112,11 @@ export const BackDrop = styled(View)`
             case 'snow':
                 return css`
                     background: #ffffff75;
+                `
+
+            case 'clear':
+                return css`
+                    background: transparent;
                 `
 
             default:
