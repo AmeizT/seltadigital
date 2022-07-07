@@ -15,12 +15,6 @@ let menu = [
 
     {
         id: uuid(),
-        name: 'Services',
-        uri: '/services',
-    },
-
-    {
-        id: uuid(),
         name: 'About',
         uri: '/about',
     },
