@@ -32,12 +32,12 @@ export default function Presentation({ presentation, index, works }){
                         </Item>
 
                         <Item dn="column" pt={2} posx="start">
-                            <Text pos="start" leading="26px">
+                            <Text size={index === 0 && '18px'} pos="start" leading="26px">
                                 {presentation.content}
                             </Text>
 
                             {presentation.sub && 
-                                <Text as="small" size="14px" pt={2}>
+                                <Text as="small" size="14px" pt={2} saturation="weak">
                                     {presentation.sub}
                                 </Text>
                             }
@@ -77,9 +77,8 @@ export default function Presentation({ presentation, index, works }){
                         {works.map(work => (
                             <Card 
                             key={work.id} 
-                            mb={3}
-                            paint={work.brand}>
-                                <Container dn="column" space="var(--md)">
+                            border="base">
+                                <Container dn="column" space="var(--md) 0">
                                     <Segment view="none">
                                         <Image
                                         src={work.brand}
@@ -92,13 +91,13 @@ export default function Presentation({ presentation, index, works }){
                                     <Segment>
                                         <Stack dn="column">
                                             <Item>
-                                                <Text color="var(--snow20)" size="14px" prefers="upper" variant={700}>
+                                                <Text size="14px" prefers="upper" variant={700}>
                                                     {work.name} / {work.category}
                                                 </Text>
                                             </Item>
 
                                             <Item pt={1}>
-                                                <Text size="16px" color="var(--snow20)">
+                                                <Text size="16px">
                                                     {work.content.length > 98 ? `${work.content.slice(0, 95)}${'...'}` : `${work.content}`}
                                                 </Text>
                                             </Item>
@@ -108,7 +107,7 @@ export default function Presentation({ presentation, index, works }){
                             </Card>
                         ))}
 
-                        <Item>
+                        <Item pt={2}>
                             <Button
                             space="8px 0"
                             variant={600}
