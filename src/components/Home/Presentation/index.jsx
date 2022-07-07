@@ -14,23 +14,23 @@ export default function Presentation({ presentation }){
             <Container space="var(--bar10) var(--md)">
                 <Segment>
                     <Stack dn="column">
-                        <Item dn="column" posx="center">
-                            <Text as="small" size="14px" pos="center" variant={700}>
+                        <Item dn="column" posx="start">
+                            <Text as="small" size="12px" pos="start" variant={600} prefers="upper" tracking="0.15ex" saturation="weak">
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size="32px" pt={2} variant={700} leading="1.1" pos="center">
+                            <Text as="h3" size="32px" pt={2} variant={600} leading="1.1" pos="start">
                                 {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>
 
-                        <Item pt={2} posx="center">
-                            <Text pos="center">
+                        <Item pt={2} posx="start">
+                            <Text pos="start" size="20px" leading="30px">
                                 {presentation.content}
                             </Text>
                         </Item>
 
-                        <Item pt={2} posx="center">
+                        <Item pt={2} posx="start">
                             <Button
                             space="10px 20px"
                             color="var(--snow20)"

@@ -99,7 +99,7 @@ export const Typography = css`
         switch(props.saturation){
             case "strong":
                 return css`
-                    color: var(--dark70);
+                    color: var(--dark40);
                     @media(prefers-color-scheme: dark){
                         color: var(--snow20);
                     }
@@ -107,9 +107,9 @@ export const Typography = css`
 
             case "weak":
                 return css`
-                    color: var(--snow60);
+                    color: var(--gray20);
                     @media(prefers-color-scheme: dark){
-                        color: var(--snow60);
+                        color: var(--gray20);
                     }
                 `
         }

@@ -120,11 +120,10 @@ body {
     padding: 0;
     margin: 0;
     font: {
-        size: var(--text50);
-        weight: 500;
+        size: var(--text60);
+        weight: 400;
         family: var(--typeface);
     }
-    font-feature-settings: 'ss03';
     text-rendering: optimizeSpeed;
     line-height: 1.333;
     color: var(--dark40);

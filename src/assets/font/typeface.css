@@ -18,9 +18,8 @@
 
 @font-face {
     font-family: 'Jakarta Sans';
-    src: url('./jakarta/PlusJakartaSans-Medium.woff2') format('woff2'),
-         url('./jakarta/PlusJakartaSans-Medium.woff') format('woff');
-
+    src: url('./jakarta/PlusJakartaSans-Regular.woff2') format('woff2'),
+        url('./jakarta/PlusJakartaSans-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -30,6 +29,17 @@
         url('./archia/archia-regular-webfont.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mersad';
+    src: url('./mersad/Mersad-Regular.eot'); /* IE9 Compat Modes */
+    src: url('./mersad/Mersad-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./mersad/Mersad-Regular.woff') format('woff'), /* Modern Browsers */
+         url('./mersad/Mersad-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }
 
 
