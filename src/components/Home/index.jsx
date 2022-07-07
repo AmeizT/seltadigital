@@ -16,9 +16,9 @@ export default function Home(){
             posx="center"
             pos="relative"
             of="hidden scroll">
-                {presentations.map(presentation => (
+                {presentations.map((presentation, index) => (
                     <React.Fragment key={presentation.id}>
-                        <Presentation presentation={presentation} />
+                        <Presentation presentation={presentation} index={index} />
                     </React.Fragment>
                 ))}
             </Book>

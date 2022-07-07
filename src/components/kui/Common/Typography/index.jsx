@@ -5,6 +5,8 @@ export const Typography = css`
     margin: ${props => props.gutter};
     line-height: ${props => props.leading};
     letter-spacing: ${props => props.tracking};
+    text-orientation: ${props => props.orientation};
+    writing-mode: ${props => props.writemode};
 
     ${(props) => {
         switch(props.typeface){

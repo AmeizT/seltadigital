@@ -1,6 +1,6 @@
 import { Button, Container, Item, Segment, Stack, Text, View } from '../../kui'
 
-export default function Presentation({ presentation }){
+export default function Presentation({ presentation, index }){
     return (
         <View
         as="section"
@@ -19,25 +19,47 @@ export default function Presentation({ presentation }){
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size="32px" pt={2} variant={600} leading="1.1" pos="start">
+                            <Text as="h3" size={index === 0 ? "60px" : '40px'} pt={2} variant={600} leading="1.1" pos="start">
                                 {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>
 
-                        <Item pt={2} posx="start">
-                            <Text pos="start" size="20px" leading="30px">
+                        <Item dn="column" pt={2} posx="start">
+                            <Text pos="start" leading="28px">
                                 {presentation.content}
                             </Text>
+
+                            {presentation.sub && 
+                                <Text as="small" size="14px" pt={2}>
+                                    {presentation.sub}
+                                </Text>
+                            }
                         </Item>
 
-                        <Item pt={2} posx="start">
+                        <Item pt={3} posx="start">
                             <Button
                             space="10px 20px"
                             color="var(--snow20)"
-                            paint="var(--dark40)">
+                            paint="var(--primary)">
                                 {presentation.action}
                             </Button>
                         </Item>
+
+                        {index === 0 &&
+                            <Item
+                            pos="absolute"
+                            base="var(--bar10)">
+                                <Text 
+                                as="h2" 
+                                size="70px" 
+                                variant={700} 
+                                leading="1" 
+                                color="var(--snow30)" 
+                                colord="var(--dark40)">
+                                    Selta <br /> Digital
+                                </Text>
+                            </Item>
+                        }
                     </Stack>
                 </Segment>
             </Container>

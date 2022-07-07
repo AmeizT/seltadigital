@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, TaskBar } from '../../kui'
 import FooterMenu from './Navigation'
 import FootBase from './FootBase'
+import FootNotes from './Footnotes'
 
 function Footer() {
     const date = new Date()
@@ -9,10 +10,11 @@ function Footer() {
     return (
         <TaskBar 
         dn="column" 
-        paint="var(--dark70)" 
-        paintd="var(--dark70)">
+        paint="var(--dark90)" 
+        paintd="var(--dark90)">
             <Container 
             dn="column">
+                <FootNotes />
                 <FooterMenu />
                 <FootBase />
             </Container>
