@@ -1,17 +1,24 @@
-import { Button, Container, Item, Segment, Stack, Text, View } from '../../kui'
 
-export default function Presentation({ presentation, index }){
+import Image from 'next/image'
+import { Book, Button, Card, Container, Item, Segment, Stack, Text, View } from '../../kui'
+
+export default function Presentation({ presentation, index, works }){
+    const imageLoader = ({ src, width, quality }) => {
+        return `${src}?w=${width}&q=${quality || 75}`
+    }
+
     return (
         <View
         as="section"
-        ht="100vh"
+        ht="auto"
+        mh="100vh"
         pos="relative"
         posx="center"
         posv="start"
         snap="start"
         snapStop="always"
         paint={presentation.paint}>
-            <Container space="var(--bar10) var(--md)">
+            <Container dn="column" space="var(--bar10) var(--md)">
                 <Segment>
                     <Stack dn="column">
                         <Item dn="column" posx="start">
@@ -19,13 +26,13 @@ export default function Presentation({ presentation, index }){
                                 {presentation.name}
                             </Text>
 
-                            <Text as="h3" size={index === 0 ? "60px" : '40px'} pt={2} variant={600} leading="1.1" pos="start">
+                            <Text as="h3" size={index === 0 ? "60px" : '32px'} pt={2} variant={600} leading="1.1" pos="start">
                                 {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
                             </Text>
                         </Item>
 
                         <Item dn="column" pt={2} posx="start">
-                            <Text pos="start" leading="28px">
+                            <Text pos="start" leading="26px">
                                 {presentation.content}
                             </Text>
 
@@ -37,18 +44,20 @@ export default function Presentation({ presentation, index }){
                         </Item>
 
                         <Item pt={3} posx="start">
-                            <Button
-                            space="10px 20px"
-                            color="var(--snow20)"
-                            paint="var(--primary)">
-                                {presentation.action}
-                            </Button>
+                            {index !== 1 &&
+                                <Button
+                                space="14px 20px"
+                                color="var(--snow20)"
+                                paint="var(--primary)">
+                                    {presentation.action}
+                                </Button>
+                            }
                         </Item>
 
                         {index === 0 &&
                             <Item
                             pos="absolute"
-                            base="var(--bar10)">
+                            base="calc(var(--bar10) + var(--md))">
                                 <Text 
                                 as="h2" 
                                 size="70px" 
@@ -62,6 +71,53 @@ export default function Presentation({ presentation, index }){
                         }
                     </Stack>
                 </Segment>
+
+                {index === 1 && 
+                    <Segment dn="column">
+                        {works.map(work => (
+                            <Card 
+                            key={work.id} 
+                            mb={3}
+                            paint={work.brand}>
+                                <Container dn="column" space="var(--md)">
+                                    <Segment view="none">
+                                        <Image
+                                        src={work.brand}
+                                        alt={work.name}
+                                        width={work.name === 'discava' ? 45 : 30}
+                                        height={30}
+                                        loader={imageLoader} />
+                                    </Segment>
+
+                                    <Segment>
+                                        <Stack dn="column">
+                                            <Item>
+                                                <Text color="var(--snow20)" size="14px" prefers="upper" variant={700}>
+                                                    {work.name} / {work.category}
+                                                </Text>
+                                            </Item>
+
+                                            <Item pt={1}>
+                                                <Text size="16px" color="var(--snow20)">
+                                                    {work.content.length > 98 ? `${work.content.slice(0, 95)}${'...'}` : `${work.content}`}
+                                                </Text>
+                                            </Item>
+                                        </Stack>
+                                    </Segment>
+                                </Container>
+                            </Card>
+                        ))}
+
+                        <Item>
+                            <Button
+                            space="8px 0"
+                            variant={600}
+                            color="var(--primary)">
+                                {presentation.action}
+                            </Button>
+                        </Item>
+                    </Segment>
+                }
             </Container>
         </View>
     )
