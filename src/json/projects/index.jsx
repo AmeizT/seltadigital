@@ -29,7 +29,8 @@ let projects = [
                 id: uuid(),
                 name: 'Sanity CMS',
             },
-        ]
+        ],
+        uri: 'https://discava.vercel.app',
     },
 
     {
@@ -50,6 +51,7 @@ let projects = [
                 name: 'Web Design & Dev',
             },
         ],
+
         tech: [
             {
                 id: uuid(),
@@ -70,7 +72,8 @@ let projects = [
                 id: uuid(),
                 name: 'PostgreSQL',
             },
-        ]
+        ],
+        uri: 'https://okkupy.vercel.app',
     },
 ]
 

@@ -12,8 +12,8 @@ export default function Work({ works }){
             wt="fit" 
             ht="fit" 
             pos="absolute"
-            top="var(--bar10)">
-                <Item wt="fit" space="var(--md)">
+            top="var(--md)">
+                <Item wt="fit" space="0 var(--md)">
                     <Text
                     size="14px"
                     prefers="upper"
@@ -30,7 +30,7 @@ export default function Work({ works }){
             columns={`repeat(${works.length}, minmax(100%, 1fr))`}
             snapType="x mandatory"
             of="scroll hidden"
-            space="var(--bar10) 0"
+            space="var(--md) 0"
             paint="var(--snow20)">
                 {works.map((work, index) => (
                     <Project key={work.id} work={work} idx={index} len={works.length} />

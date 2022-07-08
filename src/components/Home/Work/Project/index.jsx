@@ -1,4 +1,7 @@
-import { Card, Container, Item, List, ListItem, Segment, Stack, Text } from '../../../kui'
+import Link from 'next/link'
+import { HiOutlineExternalLink } from 'react-icons/hi'
+import { IconContext } from 'react-icons'
+import { Card, Container, Item, List, ListItem, NavLink, Segment, Stack, Text } from '../../../kui'
 
 export default function Project({ work, idx, len }){
     return (
@@ -12,9 +15,9 @@ export default function Project({ work, idx, len }){
         posv="start"
         snap="start"
         snapStop="always">
-            <Container dn="column" pos="relative" space="var(--bar10) var(--md) 0">
+            <Container dn="column" pos="relative" space="var(--md)">
                 <Segment dn="column">
-                    <Stack dn="column">
+                    <Stack dn="column" series={1}>
                         <Item dn="column" space="var(--sm) 0">
                             <Text 
                             size="60px" 
@@ -32,7 +35,7 @@ export default function Project({ work, idx, len }){
                         </Item>
                     </Stack>
 
-                    <Stack dn="column" space="var(--md) 0 0">
+                    <Stack dn="column" space="var(--md) 0 0" series={3}>
                         <Item>
                             <Text 
                             size="14px"
@@ -49,7 +52,7 @@ export default function Project({ work, idx, len }){
                         </Item>
                     </Stack>
 
-                    <Stack dn="column" space="var(--md) 0 0">
+                    <Stack dn="column" space="var(--md) 0 0" series={3}>
                         <Item>
                             <Text 
                             size="14px"
@@ -73,7 +76,7 @@ export default function Project({ work, idx, len }){
                         </Item>
                     </Stack>
 
-                    <Stack dn="column" space="var(--md) 0 0">
+                    <Stack dn="column" space="var(--md) 0 0" series={3}>
                         <Item>
                             <Text 
                             size="14px"
@@ -96,6 +99,30 @@ export default function Project({ work, idx, len }){
                             </List>
                         </Item>
                     </Stack>
+
+                    <Stack space="var(--md) 0 0" series={2}>
+                        <Item>
+                            <Link href={work.uri} passHref>
+                                <NavLink 
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                    <Stack posv="center">
+                                        <Item wt="fit">
+                                            <Text as="span" variant={600} color="var(--primary)">
+                                                Launch Project
+                                            </Text>
+                                        </Item>
+
+                                        <Item wt="fit" ps={1}>
+                                            <IconContext.Provider value={{ size: 24, color: 'var(--primary)' }}>
+                                                <HiOutlineExternalLink />
+                                            </IconContext.Provider>
+                                        </Item>
+                                    </Stack>
+                                </NavLink>
+                            </Link>
+                        </Item>
+                    </Stack>
                 </Segment>
             </Container>
 
@@ -108,11 +135,11 @@ export default function Project({ work, idx, len }){
                 <Item wt="fit" posv="center" space="var(--md)">
                     <Text 
                     as="span"
-                    size="40px"
+                    size="24px"
                     tracking="0.10ex"
                     variant={700}
                     color="var(--snow40)">
-                        0{idx + 1}
+                        0{idx + 1}/0{len}
                     </Text>
                 </Item>
             </Stack>

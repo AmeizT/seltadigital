@@ -29,7 +29,7 @@ export default function Presentation({ presentation, index, works }){
                             </Text>
 
                             {presentation.topic && 
-                                <Text as="h3" size={index === 0 ? "60px" : '32px'} variant={600} leading="1.1" pos="start">
+                                <Text as="h3" size={index === 0 ? "60px" : '32px'} variant={700} leading="1.1" pos="start">
                                     {presentation.topic}{index === 0 && <Text as="span" color="var(--primary)">.</Text>} <br /> {presentation.topic2 && presentation.topic2} 
                                 </Text>
                             }
