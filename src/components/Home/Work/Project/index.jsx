@@ -12,7 +12,7 @@ export default function Project({ work, idx, len }){
         posv="start"
         snap="start"
         snapStop="always">
-            <Container dn="column" space="var(--bar10) var(--md) 0">
+            <Container dn="column" pos="relative" space="var(--bar10) var(--md) 0">
                 <Segment dn="column">
                     <Stack dn="column">
                         <Item dn="column" space="var(--sm) 0">
@@ -103,33 +103,16 @@ export default function Project({ work, idx, len }){
             wt="fit" 
             ht="fit" 
             pos="absolute"
-            base="var(--bar10)"
+            base="80px"
             end="0">
                 <Item wt="fit" posv="center" space="var(--md)">
                     <Text 
                     as="span"
-                    size="16px"
-                    space="0 var(--xs)"
+                    size="40px"
                     tracking="0.10ex"
-                    color="var(--primary)">
+                    variant={700}
+                    color="var(--snow40)">
                         0{idx + 1}
-                    </Text>
-
-                    <Item 
-                    as="span"
-                    wt="20px"
-                    ht="2px"
-                    paint="var(--primary)">
-
-                    </Item>
-
-                    <Text 
-                    as="span"
-                    size="16px"
-                    space="0 0 0 var(--xs)"
-                    tracking="0.10ex"
-                    color="var(--primary)">
-                        0{len}
                     </Text>
                 </Item>
             </Stack>

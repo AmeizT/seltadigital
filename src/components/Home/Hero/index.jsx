@@ -5,7 +5,7 @@ import Presentation from '../Presentation'
 export default function Hero({ presentations }){
     return (
         <React.Fragment>
-            {presentations.filter(presentation => presentation.name === 'Selta Digital').map((presentation, index) => (
+            {presentations.filter(presentation => presentation.category === 'hero').map((presentation, index) => (
                 <React.Fragment key={presentation.id}>
                     <Presentation presentation={presentation} index={index} />
                 </React.Fragment>

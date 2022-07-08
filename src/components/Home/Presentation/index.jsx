@@ -23,14 +23,14 @@ export default function Presentation({ presentation, index, works }){
             <Container dn="column" space="var(--bar10) var(--md)">
                 <Segment>
                     <Stack dn="column">
-                        <Item dn="column" posx="start">
-                            <Text as="small" size="12px" pos="start" variant={600} prefers="upper" tracking="0.15ex" saturation="weak">
+                        <Item dn="column" posx="start" pt={2}>
+                            <Text as="small" size="14px" pos="start" prefers="upper" tracking="0.10ex" saturation="weak">
                                 {presentation.name}
                             </Text>
 
                             {presentation.topic && 
-                                <Text as="h3" size={index === 0 ? "60px" : '32px'} pt={2} variant={600} leading="1.1" pos="start">
-                                    {presentation.topic} <br /> {presentation.topic2 && presentation.topic2}
+                                <Text as="h3" size={index === 0 ? "60px" : '32px'} variant={600} leading="1.1" pos="start">
+                                    {presentation.topic}{index === 0 && <Text as="span" color="var(--primary)">.</Text>} <br /> {presentation.topic2 && presentation.topic2} 
                                 </Text>
                             }
                         </Item>
@@ -54,7 +54,7 @@ export default function Presentation({ presentation, index, works }){
                                 color="var(--primary)"
                                 variant={700}>
                                     <Stack posv="center">
-                                        <Item pr={3}>
+                                        <Item pr={1}>
                                             {presentation.action}
                                         </Item>
 

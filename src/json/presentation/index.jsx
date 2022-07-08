@@ -3,11 +3,12 @@ import { v4 as uuid } from 'uuid'
 let presentations = [
     {
         id: uuid(),
-        name: 'Selta Digital',
-        topic: 'Beyond brilliance.',
+        name: 'About Selta',
+        topic: 'Beyond brilliance',
         content: 'Selta Digital is a multidisciplinary team of remote designers & developers working together to craft some cool apps.',
         sub: 'We aim to bring concepts to life by building stunning & scalable web or mobile apps using the most versatile tech stack.',
         action: 'Let\'s build your app',
+        category: 'hero',
         // paint: '#e9ecd5',
     },
 

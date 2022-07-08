@@ -12,8 +12,8 @@ export default function Contacts({ contacts }){
                             </Text>
                         </Item>
 
-                        <Item space="var(--xs) 0 0">
-                            <Text as="small" size="16px" saturation="weak">
+                        <Item space="6px 0 0">
+                            <Text as="small" size="16px" saturation="weak" tracking="0.10ex">
                                 {contact.number}
                             </Text>
                         </Item>

@@ -12,7 +12,8 @@ function Footer() {
     
     return (
         <TaskBar 
-        dn="column" 
+        dn="column"
+        space="0 0 var(--md)" 
         paint="var(--dark90)" 
         paintd="var(--dark90)">
             <Container 

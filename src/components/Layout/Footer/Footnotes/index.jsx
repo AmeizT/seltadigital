@@ -14,7 +14,7 @@ export default function FootNotes(){
                         as="span" 
                         size="20px"
                         saturation="weak">
-                            We&apos;re happy that you&apos;re here. We&apos;d love to work with you on your next project.
+                            We&apos;re happy that you&apos;re here. We&apos;d love to work on your next project.
                         </Text>
                     </Item>
                 </Stack>
