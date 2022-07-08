@@ -11,17 +11,23 @@ let projects = [
         scope: [
             {
                 id: uuid(),
-                name: 'branding',
+                name: 'Branding',
             },
 
             {
                 id: uuid(),
-                name: 'web design',
+                name: 'Web Design & Dev',
+            },
+        ],
+        tech: [
+            {
+                id: uuid(),
+                name: 'Next.js | React.js',
             },
 
             {
                 id: uuid(),
-                name: 'web development',
+                name: 'Sanity CMS',
             },
         ]
     },
@@ -31,22 +37,38 @@ let projects = [
         name: 'oqpy homes',
         content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed and managed by Selta Digital.',
         brand: '#00ccb0',
-        category: 'web',
+        category: 'Web',
         action: 'Explore',
         scope: [
             {
                 id: uuid(),
-                name: 'branding',
+                name: 'Branding',
             },
 
             {
                 id: uuid(),
-                name: 'web design',
+                name: 'Web Design & Dev',
+            },
+        ],
+        tech: [
+            {
+                id: uuid(),
+                name: 'Next.js | React.js',
             },
 
             {
                 id: uuid(),
-                name: 'web development',
+                name: 'Sanity CMS',
+            },
+
+            {
+                id: uuid(),
+                name: 'Python Django',
+            },
+
+            {
+                id: uuid(),
+                name: 'PostgreSQL',
             },
         ]
     },

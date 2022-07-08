@@ -7,19 +7,16 @@ export default function FootNotes(){
 
     return (
         <React.Fragment>
-            <Segment>
-
-            </Segment>
-            
-            <Segment view="none" border="base">
-                <Stack pt={3} pb={4} dn="column">
-                    {notes.map((note, index) => (
-                        <Item key={note.id}>
-                            <Text as="small" size="md" leading="24px" saturation="weak">
-                                {note.content}
-                            </Text>
-                        </Item>
-                    ))}
+            <Segment space="var(--xxl) 0">
+                <Stack>
+                    <Item>
+                        <Text 
+                        as="span" 
+                        size="20px"
+                        saturation="weak">
+                            We&apos;re happy that you&apos;re here. We&apos;d love to work with you on your next project.
+                        </Text>
+                    </Item>
                 </Stack>
             </Segment>
         </React.Fragment>

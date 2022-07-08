@@ -1,5 +1,7 @@
 
 import Image from 'next/image'
+import { IconContext } from 'react-icons'
+import { MdArrowForward } from 'react-icons/md'
 import { BackDrop, Book, Button, Card, Container, Item, Segment, Stack, Text, View } from '../../kui'
 
 export default function Presentation({ presentation, index, works }){
@@ -18,21 +20,6 @@ export default function Presentation({ presentation, index, works }){
         snap="start"
         snapStop="always"
         paint={presentation.paint}>
-            {index === 1 && 
-                <Image
-                src={presentation.image}
-                alt={presentation.name}
-                layout="fill"
-                objectFit='cover'
-                objectPosition={presentation.position}
-                priority
-                loader={imageLoader} />
-            }
-
-            <BackDrop
-            ht="100%"
-            backdrop={index === 1 && 'dark'}
-            variant={index === 1 ? 'night' : 'clear'}>
             <Container dn="column" space="var(--bar10) var(--md)">
                 <Segment>
                     <Stack dn="column">
@@ -49,12 +36,12 @@ export default function Presentation({ presentation, index, works }){
                         </Item>
 
                         <Item dn="column" pt={2} posx="start">
-                            <Text size={index === 0 && '18px'} pos="start" leading="26px">
+                            <Text size={index === 0 && '20px'} pos="start" leading="26px">
                                 {presentation.content}
                             </Text>
 
                             {presentation.sub && 
-                                <Text as="small" size="14px" pt={2} saturation="weak">
+                                <Text as="small" size="16px" pt={2} saturation="weak">
                                     {presentation.sub}
                                 </Text>
                             }
@@ -63,16 +50,32 @@ export default function Presentation({ presentation, index, works }){
                         <Item pt={3} posx="start">
                             {index !== 1 &&
                                 <Button
-                                space="14px 20px"
-                                color="var(--snow20)"
-                                paint="var(--primary)">
-                                    {presentation.action}
+                                space="12px 0"
+                                color="var(--primary)"
+                                variant={700}>
+                                    <Stack posv="center">
+                                        <Item pr={3}>
+                                            {presentation.action}
+                                        </Item>
+
+                                        <Item
+                                        wt="fit"
+                                        ht="fit"
+                                        space="6px"
+                                        rad="50px"
+                                        border="2px solid var(--primary)">
+                                            <IconContext.Provider value={{ size: 20, color: 'var(--primary)' }}>
+                                                <MdArrowForward />
+                                            </IconContext.Provider>
+                                        </Item>
+                                    </Stack>
                                 </Button>
                             }
                         </Item>
 
                         {index === 0 &&
                             <Item
+                            wt="fit"
                             pos="absolute"
                             base="calc(var(--bar10) + var(--md))">
                                 <Text 
@@ -88,60 +91,7 @@ export default function Presentation({ presentation, index, works }){
                         }
                     </Stack>
                 </Segment>
-
-                {index === 1 && 
-                    <Segment dn="column">
-                        {works.map(work => (
-                            <Card 
-                            key={work.id} 
-                            border="base">
-                                <Container dn="column" space="var(--md) 0">
-                                    <Segment view="none">
-                                        <Image
-                                        src={work.brand}
-                                        alt={work.name}
-                                        width={work.name === 'discava' ? 45 : 30}
-                                        height={30}
-                                        loader={imageLoader} />
-                                    </Segment>
-
-                                    <Segment>
-                                        <Stack dn="column">
-                                            <Item>
-                                                <Text size="10px" prefers="upper" color={work.brand} variant={700} tracking="0.30ex">
-                                                    {work.category}
-                                                </Text>
-                                            </Item>
-
-                                            <Item pt={1}>
-                                                <Text size="28px" prefers="upper" variant={700} color="var(--snow20)">
-                                                    {work.name}
-                                                </Text>
-                                            </Item>
-
-                                            <Item pt={1}>
-                                                <Text size="18px" color="var(--snow20)">
-                                                    {work.content.length > 98 ? `${work.content.slice(0, 95)}${'...'}` : `${work.content}`}
-                                                </Text>
-                                            </Item>
-
-                                            <Item pt={2}>
-                                                <Button
-                                                space="8px 0"
-                                                variant={600}
-                                                color={work.brand}>
-                                                    {work.action}
-                                                </Button>
-                                            </Item>
-                                        </Stack>
-                                    </Segment>
-                                </Container>
-                            </Card>
-                        ))}
-                    </Segment>
-                }
             </Container>
-            </BackDrop>
         </View>
     )
 }

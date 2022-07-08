@@ -69,7 +69,7 @@ export default function FootBase(){
                 <Stack dn="column" dnx3="row" series={3}>
                     <Stack pt={1}>
                         <Item>
-                            <Text as="span" size="14px" saturation="weak">&copy; <Time dateTime={date.getFullYear()}>{date.getFullYear()}</Time> Selta Digital. All rights reserved.</Text>
+                            <Text as="span" size="16px" saturation="weak">Copyright &copy; <Time dateTime={date.getFullYear()}>{date.getFullYear()}</Time> Selta Digital.</Text>
                         </Item>
                     </Stack>
 

@@ -16,7 +16,7 @@ export default function FooterMenu(){
                 <ListItem 
                 key={menu.id}
                 wt="100%"
-                space="var(--sm) 0">
+                space="var(--xs) 0">
                     {menu?.ext === true ? 
                         <NavLink
                         href={menu.method === 'mail' ? `mailto:${menu.uri}` : menu.method === 'call' ? `tel:${menu.uri}` : menu.uri}

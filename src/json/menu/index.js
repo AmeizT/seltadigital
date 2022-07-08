@@ -3,14 +3,20 @@ import { v4 as uuid } from 'uuid'
 let menu = [
     {
         id: uuid(),
-        name: 'Shop',
-        uri: '/shop',
+        name: 'Works',
+        uri: '/works',
     },
 
     {
         id: uuid(),
-        name: 'Works',
-        uri: '/works',
+        name: 'Builder',
+        uri: '/builder',
+    },
+
+    {
+        id: uuid(),
+        name: 'Shop',
+        uri: '/shop',
     },
 
     {
@@ -21,21 +27,15 @@ let menu = [
 
     {
         id: uuid(),
-        name: 'Careers',
-        uri: '/careers',
-    },
-
-    {
-        id: uuid(),
         name: 'Blog',
         uri: '/blog',
     },
 
     {
         id: uuid(),
-        name: 'Contact',
-        uri: '/contact',
-    }
+        name: 'Jobs',
+        uri: '/jobs',
+    },
 ]
 
 export function useMenu(){

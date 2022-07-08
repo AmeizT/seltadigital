@@ -1,11 +1,14 @@
 import React from 'react'
-import { Container, TaskBar } from '../../kui'
-import FooterMenu from './Navigation'
+import FooterMenu from './FootMenu'
 import FootBase from './FootBase'
 import FootNotes from './Footnotes'
+import Contacts from './Contacts'
+import { useContact } from "../../../json/contacts";
+import { Container, TaskBar } from "../../kui";
 
 function Footer() {
     const date = new Date()
+    const contacts = useContact()
     
     return (
         <TaskBar 
@@ -16,6 +19,7 @@ function Footer() {
             dn="column">
                 <FootNotes />
                 <FooterMenu />
+                <Contacts contacts={contacts} />
                 <FootBase />
             </Container>
         </TaskBar>
