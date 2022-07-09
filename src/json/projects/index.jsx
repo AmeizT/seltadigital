@@ -4,7 +4,7 @@ let projects = [
     {
         id: uuid(),
         name: 'discava',
-        content: 'Discava is an online store specializing in ergonomics, massage, smart home, vr & solar tech available only in Botswana, South Africa & Zimbabwe.',
+        content: 'Discava Store is an online store specializing in ergonomics, massage, smart home, vr & solar gadgets.',
         brand: '#0066b2',
         category: 'e-Commerce',
         action: 'Explore',
@@ -16,7 +16,7 @@ let projects = [
 
             {
                 id: uuid(),
-                name: 'Web Design & Dev',
+                name: 'Web desgin & development',
             },
         ],
         tech: [
@@ -28,6 +28,11 @@ let projects = [
             {
                 id: uuid(),
                 name: 'Sanity CMS',
+            },
+
+            {
+                id: uuid(),
+                name: 'Vercel',
             },
         ],
         uri: 'https://discava.vercel.app',
@@ -48,7 +53,7 @@ let projects = [
 
             {
                 id: uuid(),
-                name: 'Web Design & Dev',
+                name: 'Web desgin & development',
             },
         ],
 
@@ -72,6 +77,11 @@ let projects = [
                 id: uuid(),
                 name: 'PostgreSQL',
             },
+
+            {
+                id: uuid(),
+                name: 'Vercel',
+            },
         ],
         uri: 'https://okkupy.vercel.app',
     },
@@ -91,7 +101,7 @@ let projects = [
 
             {
                 id: uuid(),
-                name: 'Web Design & Dev',
+                name: 'Web desgin & development',
             },
         ],
         tech: [

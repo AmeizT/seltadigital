@@ -5,7 +5,6 @@ export default function Work({ works }){
     return (
         <View 
         as="section" 
-        mh="100vh"
         dn="column"
         pos="relative"
         space="0 0 var(--md)"
