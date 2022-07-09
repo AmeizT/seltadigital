@@ -36,7 +36,7 @@ let projects = [
     {
         id: uuid(),
         name: 'oqpy homes',
-        content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed, owned & managed by Selta Digital.',
+        content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed & managed by Selta Digital.',
         brand: '#00ccb0',
         category: 'Web',
         action: 'Explore',
@@ -74,6 +74,53 @@ let projects = [
             },
         ],
         uri: 'https://okkupy.vercel.app',
+    },
+
+    {
+        id: uuid(),
+        name: 'truckire',
+        content: 'Truckire is a logistics & booking app for haulage trucks.',
+        brand: '#0066b2',
+        category: 'Web',
+        action: 'Explore',
+        scope: [
+            {
+                id: uuid(),
+                name: 'Branding',
+            },
+
+            {
+                id: uuid(),
+                name: 'Web Design & Dev',
+            },
+        ],
+        tech: [
+            {
+                id: uuid(),
+                name: 'Next.js | React.js',
+            },
+
+            {
+                id: uuid(),
+                name: 'Sanity CMS',
+            },
+
+            {
+                id: uuid(),
+                name: 'Python Django',
+            },
+
+            {
+                id: uuid(),
+                name: 'PostgreSQL',
+            },
+
+            {
+                id: uuid(),
+                name: 'Vercel',
+            },
+        ],
+        uri: 'https://truckire.vercel.app',
     },
 ]
 
