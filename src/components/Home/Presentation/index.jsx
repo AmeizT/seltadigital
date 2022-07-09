@@ -20,7 +20,7 @@ export default function Presentation({ presentation, index, works }){
         snap="start"
         snapStop="always"
         paint={presentation.paint}>
-            <Container dn="column" space="var(--bar10) var(--md)">
+            <Container dn="column" space="var(--bar10) var(--sm)">
                 <Segment>
                     <Stack dn="column">
                         <Item dn="column" posx="start" pt={2}>
@@ -52,7 +52,7 @@ export default function Presentation({ presentation, index, works }){
                                 <Button
                                 space="12px 0"
                                 color="var(--primary)"
-                                variant={700}>
+                                variant={400}>
                                     <Stack posv="center">
                                         <Item pr={1}>
                                             {presentation.action}
@@ -61,7 +61,7 @@ export default function Presentation({ presentation, index, works }){
                                         <Item
                                         wt="fit"
                                         ht="fit"
-                                        space="6px"
+                                        space="4px"
                                         rad="50px"
                                         border="2px solid var(--primary)">
                                             <IconContext.Provider value={{ size: 20, color: 'var(--primary)' }}>

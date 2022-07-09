@@ -14,7 +14,7 @@ function Footer() {
         <TaskBar 
         dn="column"
         space="0 0 var(--md)" 
-        paint="#031320">
+        paint="#020d15">
             <Container dn="column">
                 <FootNotes />
                 <FooterMenu />

@@ -4,7 +4,7 @@ let projects = [
     {
         id: uuid(),
         name: 'discava',
-        content: 'Discava is an online store which operates in Botswana, Zimbabwe and South Africa specializing in ergonomics, massage, smart home, vr headsets and solar technology.',
+        content: 'Discava is an online store specializing in ergonomics, massage, smart home, vr & solar tech available only in Botswana, South Africa & Zimbabwe.',
         brand: '#0066b2',
         category: 'e-Commerce',
         action: 'Explore',

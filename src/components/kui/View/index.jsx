@@ -24,7 +24,7 @@ export const View = styled.div.attrs(props => ({
 `
 
 export const Container = styled(View)`
-  padding: ${(props) => props.space || "0 var(--space-md)"};
+  padding: ${(props) => props.space || "0 var(--space-sm)"};
   @media only screen and (min-width: 1024px) {
     padding: ${(props) => props.spacex3 || "0 var(--space-mxx)"};
   }

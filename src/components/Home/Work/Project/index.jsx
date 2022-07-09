@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { HiOutlineExternalLink } from 'react-icons/hi'
+import { MdArrowForward } from 'react-icons/md'
 import { IconContext } from 'react-icons'
 import { Card, Container, Item, List, ListItem, NavLink, Segment, Stack, Text } from '../../../kui'
 
@@ -9,18 +9,20 @@ export default function Project({ work, idx, len }){
         key={work.id} 
         as="article"
         wt="100%"
-        ht="100vh"
+        ht="maxFill"
         pos="relative"
         posx="center"
         posv="start"
         snap="start"
-        snapStop="always">
-            <Container dn="column" pos="relative" space="var(--md)">
+        snapStop="always"
+        paint="var(--snow10)"
+        paintd="var(--dark60)">
+            <Container dn="column" pos="relative" space="var(--bar10) var(--sm) var(--sm)">
                 <Segment dn="column">
                     <Stack dn="column" series={1}>
-                        <Item dn="column" space="var(--sm) 0">
+                        <Item dn="column" pb={3}>
                             <Text 
-                            size="60px" 
+                            size="40px" 
                             prefers="caps" 
                             leading={1}
                             variant={700}>
@@ -107,15 +109,20 @@ export default function Project({ work, idx, len }){
                                 target="_blank"
                                 rel="noopener noreferrer">
                                     <Stack posv="center">
-                                        <Item wt="fit">
-                                            <Text as="span" variant={600} color="var(--primary)">
-                                                Launch Project
+                                        <Item wt="fit" pr={1}>
+                                            <Text as="span" variant={400} color="var(--primary)">
+                                                Discover
                                             </Text>
                                         </Item>
 
-                                        <Item wt="fit" ps={1}>
-                                            <IconContext.Provider value={{ size: 24, color: 'var(--primary)' }}>
-                                                <HiOutlineExternalLink />
+                                        <Item
+                                        wt="fit"
+                                        ht="fit"
+                                        space="4px"
+                                        rad="50px"
+                                        border="2px solid var(--primary)">
+                                            <IconContext.Provider value={{ size: 20, color: 'var(--primary)' }}>
+                                                <MdArrowForward />
                                             </IconContext.Provider>
                                         </Item>
                                     </Stack>
@@ -130,9 +137,9 @@ export default function Project({ work, idx, len }){
             wt="fit" 
             ht="fit" 
             pos="absolute"
-            base="80px"
-            end="0">
-                <Item wt="fit" posv="center" space="var(--md)">
+            top="0"
+            start="0">
+                <Item wt="fit" posv="center" space="var(--sm)">
                     <Text 
                     as="span"
                     size="24px"

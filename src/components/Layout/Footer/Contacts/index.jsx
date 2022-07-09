@@ -7,13 +7,13 @@ export default function Contacts({ contacts }){
                 {contacts.map(contact => (
                     <ListItem key={contact.id} dn="column" wt="100%" space="var(--sm) 0">
                         <Item>
-                            <Text as="h5" variant={300} color="var(--snow20)">
+                            <Text as="h5" variant={300} size="20px" color="var(--snow20)">
                                 {contact.city} <Text as="span" color="var(--primary)">.</Text>
                             </Text>
                         </Item>
 
                         <Item space="6px 0 0">
-                            <Text as="small" size="16px" saturation="weak" tracking="0.10ex">
+                            <Text as="small" size="14px" saturation="weak">
                                 {contact.number}
                             </Text>
                         </Item>
