@@ -1,11 +1,11 @@
-import React from 'react'
-import Meta from '../components/kui/Meta'
-import Home from '../components/Home'
+import React from "react"
+import { Home } from "../features"
+import { Meta } from "../@fastor"
 
-export default function Init(){
+export default function HomePage(){
     return (
         <React.Fragment>
-            <Meta />
+            <Meta title="Beyond Brilliance." />
             <Home />
         </React.Fragment>
     )

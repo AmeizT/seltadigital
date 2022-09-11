@@ -19,20 +19,8 @@ let menu = [
     [
         {
             id: uuid(),
-            name: 'Works',
-            uri: '/works',
-        },
-
-        {
-            id: uuid(),
-            name: 'Builder',
-            uri: '/builder',
-        },
-
-        {
-            id: uuid(),
-            name: 'Shop',
-            uri: '/shop',
+            name: 'Work',
+            uri: '/work',
         },
 
         {
@@ -43,14 +31,21 @@ let menu = [
 
         {
             id: uuid(),
+            name: 'Shop',
+            uri: '/shop',
+        },
+
+
+        {
+            id: uuid(),
             name: 'Blog',
             uri: '/blog',
         },
 
         {
             id: uuid(),
-            name: 'Jobs',
-            uri: '/jobs',
+            name: 'Builder',
+            uri: '/builder',
         },
     ],
 ]

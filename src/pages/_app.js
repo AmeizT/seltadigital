@@ -1,11 +1,11 @@
-import '../sass/app.scss'
-import Layout from '../components/Layout'
+import "../assets/sass/app.scss"
+import BaseLayout from "../layout"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <BaseLayout>
       <Component {...pageProps} />
-    </Layout>
+    </BaseLayout>
   )
 }
 
