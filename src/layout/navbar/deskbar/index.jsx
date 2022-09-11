@@ -16,7 +16,6 @@ export default function Deskbar({ menu }){
                     <ListItem key={menu.id} pr="var(--sz50)">
                         <Link href={menu.uri} passHref>
                             <NavLink 
-                            className={active === i && "active"} 
                             onClick={() => handleActiveLink(i)}>
                                 {menu.name}
                             </NavLink>
