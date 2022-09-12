@@ -1,0 +1,1 @@
+export { StickSector } from "./stick"

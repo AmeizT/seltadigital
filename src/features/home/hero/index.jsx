@@ -14,7 +14,7 @@ export default function Hero(){
     }
 
     return(
-        <Sector h="100vh" pt="var(--hs30)" gradient="var(--snow20)">
+        <Sector h="100vh" data-name="hero" pt="var(--hs30)" gradient="var(--snow20)">
             <Container>
                 <Stack w7x="70%" move="y">
                     <Item move="y">
@@ -23,7 +23,7 @@ export default function Hero(){
                         </Headtext>
 
                         <Text {...snow} fs={18} leading={1.5} pt="var(--sz60)">
-                            We are Selta Smart Tech, a multidisciplinary team of remote designers & developers creating some satisfying apps on the web. We focus on scalability and solving challenges using a combination of our expertise and versatile tech stack.
+                            We are Selta Smart Tech, a multidisciplinary team of remote web development wizards with many satisfying magic tricks to showcase on the web. We focus on scalability and solving challenges using a combination of our magic wands and versatile tech stack.
                         </Text>
                     </Item>
 

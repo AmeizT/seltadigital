@@ -265,4 +265,18 @@ export const Typography = css`
     }
     background-clip: ${props => props.bgClip};
     -webkit-background-clip: ${props => props.bgClip};
+
+    ${(props) => {
+        switch(props.writemode){
+            case "vert":
+                return css`
+                    writing-mode: vertical-rl;
+                `
+
+            default:
+                return css`
+                    writing-mode: ${props => props.writemode};
+                `
+        }
+    }}
 `
