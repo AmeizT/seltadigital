@@ -12,7 +12,7 @@ export default function Showcase({ showcaseMap }){
     }
 
     const text = {
-        textpos: "end",
+        textpos: "start",
     }
 
     return (

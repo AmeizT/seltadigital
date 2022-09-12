@@ -9,14 +9,16 @@ export function StickSector({ name, content, children }){
 
     return (
         <Sector space="var(--sz70) 0">
-            <Container>
-                <Stack>
-                    <Item w="fit" pos="stk" ptop="var(--hs40)">
+            <Container pos="rtv">
+                <Stack pos="abs" h="100vh">
+                    <Item w="fit" pos="stk" ptop="var(--hs40)" view="none">
                         <Headtext {...textProps}>
                             {name}
                         </Headtext>
                     </Item>
+                </Stack>
 
+                <Stack>
                     {children}
                 </Stack>
             </Container>
