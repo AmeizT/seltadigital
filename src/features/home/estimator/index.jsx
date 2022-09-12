@@ -1,24 +1,20 @@
 import { StickSector } from "../../../components"
-import { Item } from "../../../@fastor"
+import { Item, Stack, Text } from "../../../@fastor"
 
 export default function Estimator(){
     return (
         <StickSector name="Cut to the chase">
-            <Item>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
+            <Stack move="y">
+                <Item>
+                    <Text fs={32}>
+                        We are getting along pretty well so we might as well start discussing about how much it will cost to work your cool project. 
+                    </Text> 
+                </Item>
 
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime vero harum, accusamus, quae distinctio dolorum quod praesentium cum asperiores fuga voluptatem odit sunt repudiandae voluptates earum dolores modi. Architecto, reiciendis!
-            </Item>
+                <Item>
+                    
+                </Item>
+            </Stack>
         </StickSector>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react"
+import { RiArrowRightUpLine } from "react-icons/ri"
 import { StickSector } from "../../../components"
-import { Card, Container, Headtext, Item, pluralize, Sector, Segment, Stack, Text, Tiny } from "../../../@fastor"
+import { Button, Card, Container, Headtext, Icon, Item, pluralize, Sector, Segment, Stack, Text, Tiny } from "../../../@fastor"
 
 export default function Showcase({ showcaseMap }){
     const [showcase] = React.useState([...showcaseMap])
@@ -32,16 +33,30 @@ export default function Showcase({ showcaseMap }){
 
                         <Segment move="y" gap="var(--sz40) 0" mb="var(--sz70)">
                             {showcase[1].map(showcase => (
-                                <Card key={showcase.id} as="article" bg="var(--snow20)">
+                                <Card key={showcase.id} as="article" pos="rtv" bg={showcase.brand}>
                                     <Container space="var(--sz50)">
                                         <Stack move="y">
-                                            <Item>
-                                                <Text>
+                                            <Item zx={2}>
+                                                <Text hue="var(--snow10)">
                                                     {showcase.content.length > 199 ? `${showcase.content.slice(0, 199)}[...]` : 
                                                     showcase.content}
                                                 </Text>
                                             </Item>
-                                            <Item></Item>
+
+                                            <Item space="var(--sz50) 0">
+                                                <Button fw={70} space="var(--sz20) 0" bb="2px dotted #fff" hue="#fff">
+                                                    {showcase.action}&nbsp;
+                                                    <Icon size={24} hex="#fff">
+                                                        <RiArrowRightUpLine />
+                                                    </Icon>
+                                                </Button>
+                                            </Item>
+
+                                            <Item pbase="0" pend="0" zx={1}>
+                                                <Headtext fw={70} fs3x="var(--fs3x)" hue="#ffffff5c" leading={1}>
+                                                    {showcase.name}
+                                                </Headtext>
+                                            </Item>
                                         </Stack>
                                     </Container>
                                 </Card>

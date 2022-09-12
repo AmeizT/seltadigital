@@ -44,7 +44,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'oqpy homes',
-            content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed & owned by Selta Smart Tech. The app was built to change the narrative that real estate agents are now charging home seekers exobitant rates to help them secure decent homes. Oqpy Homes therefore tries to eliminate the middleman [real estate agents] by acting as a virtual agent and promoting direct communication between landlords and tenants.',
+            content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed & owned by Selta Smart Tech. The app was built to change the narrative that real estate agents charge home seekers exobitant rates to help them secure decent homes. Oqpy Homes therefore tries to eliminate the middleman [real estate agents] by acting as a virtual agent and promoting direct communication between landlords and tenants.',
             brand: '#00ccb0',
             category: 'Web',
             action: 'Discover',
@@ -93,7 +93,7 @@ const showcase = new Map([
             id: uuid(),
             name: 'truckire',
             content: 'Truckire is a logistics & booking app for haulage trucks.',
-            brand: '#0066b2',
+            brand: '#000000',
             category: 'Web',
             action: 'Discover',
             scope: [
