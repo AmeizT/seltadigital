@@ -5,7 +5,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'discava',
-            content: 'Discava Store is an ecommerce business mainly focusing on ergonomics, smart home, massage, vr and decor. They target customers in Botswana, South Africa & Zimbabwe.',
+            content: 'Discava is an ecommerce business specializing in ergonomics, smart home, massage, vr and decor.',
             brand: '#0066b2',
             category: 'e-Commerce',
             action: 'Discover',
@@ -36,6 +36,7 @@ const showcase = new Map([
                     name: 'Vercel',
                 },
             ],
+            image: "/brands/discava-brand.jpg",
             uri: 'https://discava.vercel.app',
         },]
     ],
@@ -86,6 +87,7 @@ const showcase = new Map([
                     name: 'Vercel',
                 },
             ],
+            image: "/brands/discava-site.png",
             uri: 'https://okkupy.vercel.app',
         },
 
@@ -133,6 +135,7 @@ const showcase = new Map([
                     name: 'Vercel',
                 },
             ],
+            image: "/brands/discava-site.png",
             uri: 'https://truckire.vercel.app',
         },]
     ],

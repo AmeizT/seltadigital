@@ -1,10 +1,13 @@
 import React from "react"
+import Image from "next/image"
 import { RiArrowRightUpLine } from "react-icons/ri"
 import { StickSector } from "../../../components"
-import { Button, Card, Container, Headtext, Icon, Item, pluralize, Sector, Segment, Stack, Text, Tiny } from "../../../@fastor"
+import { Button, Card, Container, Headtext, Icon, imageLoader, Item, pluralize, Sector, Segment, Stack, Text, Tiny } from "../../../@fastor"
 
 export default function Showcase({ showcaseMap }){
     const [showcase] = React.useState([...showcaseMap])
+    const d = new Date()
+    const year = d.getFullYear().toString().slice(2, 4)
 
     const textProps = {
         fs3x: "var(--fs3x)", 
@@ -17,10 +20,16 @@ export default function Showcase({ showcaseMap }){
 
     return (
         <StickSector space="var(--sz70) 0" name="Showcase">
+            <Item>
+                <Headtext hue="var(--gray10)">
+                    18-{year}
+                </Headtext>
+            </Item>
+
             <Item move="y">
                 {showcase.map((showcase, key) => (
                     <React.Fragment key={key}>
-                        <Segment move="y" mb="var(--sz50)">
+                        <Segment move="y" mb="var(--sz50)" view="none">
                             <Headtext key={key} {...text}>
                                 {showcase[0]}
                             </Headtext>
@@ -31,20 +40,29 @@ export default function Showcase({ showcaseMap }){
                             </Tiny>
                         </Segment>
 
-                        <Segment move="y" gap="var(--sz40) 0" mb="var(--sz70)">
+                        <Segment move="y" gap="var(--sz40) 0">
                             {showcase[1].map(showcase => (
-                                <Card key={showcase.id} as="article" pos="rtv" bg={showcase.brand}>
-                                    <Container space="var(--sz50)">
+                                <Card key={showcase.id} as="article" pos="rtv" mb="var(--sz70)">
+                                    <Container space="0">
                                         <Stack move="y">
-                                            <Item zx={2}>
-                                                <Text hue="var(--snow10)">
+                                            <Item h="50vh" pos="rtv" imgFilter="grayscale(100%)">
+                                                <Image
+                                                src={showcase.image}
+                                                alt={showcase.name}
+                                                layout="fill"
+                                                objectFit="cover"
+                                                loader={imageLoader} />
+                                            </Item>
+
+                                            <Item zx={2} pt="var(--sz50)">
+                                                <Text fw={60} prefs="upper">
                                                     {showcase.content.length > 199 ? `${showcase.content.slice(0, 199)}[...]` : 
                                                     showcase.content}
                                                 </Text>
                                             </Item>
 
                                             <Item space="var(--sz50) 0">
-                                                <Button fw={70} space="var(--sz20) 0" bb="2px dotted #fff" hue="#fff">
+                                                <Button fw={70} space="var(--sz20) 0" bb="2px dotted var(--dark40)" hue="var(--dark40)">
                                                     {showcase.action}&nbsp;
                                                     <Icon size={24} hex="#fff">
                                                         <RiArrowRightUpLine />
