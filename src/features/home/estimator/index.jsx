@@ -7,7 +7,7 @@ export default function Estimator(){
             <Stack move="y">
                 <Item>
                     <Text fs={32}>
-                        We are getting along pretty well so we might as well start discussing about how much it will cost to work your cool project. 
+                        We can talk all day but the works needs to be done. Let&apos;s estimate how much your project will cost. 
                     </Text> 
                 </Item>
 
