@@ -10,13 +10,18 @@ export default function Footer(){
         hue: "#ffffff",
     }
 
+    const navProps = {
+        fs: 16,
+        pt: "var(--sz20)",
+    }
+
     return (
         <TaskBar space="var(--sz70) 0" mt="var(--sz70)" bg="var(--dark80)">
             <Container>
                 <Stack move="y">
                     <Item>
-                        <Text fs={24} mute={true}>
-                            <Text as="span" {...snow}>Let&apos;s cut to the chase.</Text> <br />We believe you&apos;ve been convinced that we&apos;d love to work alongside you. <br/><Text as="span" {...snow}>Drop us a line</Text> and let&apos;s craft something &quot;wow&quot; together.
+                        <Text fs={32} mute={true}>
+                            <Text as="span" {...snow}>Let&apos;s cut to the chase.</Text> We&apos;d love to work with you on your first or next project. <br/><Text as="span" {...snow}>Drop us a line</Text> if you believe in our magic.
                         </Text>
                     </Item>
 
@@ -28,6 +33,7 @@ export default function Footer(){
                                         <Link href={menu.uri} passHref>
                                             <NavLink 
                                             {...snow}
+                                            {...navProps}
                                             onClick={() => handleActiveLink(i)}>
                                                 {menu.name}
                                             </NavLink>
@@ -44,6 +50,7 @@ export default function Footer(){
                                         <Link href={menu.uri} passHref>
                                             <NavLink 
                                             {...snow}
+                                            {...navProps}
                                             onClick={() => handleActiveLink(i)}>
                                                 {menu.name}
                                             </NavLink>
@@ -55,7 +62,7 @@ export default function Footer(){
                     </Item>
 
                     <Item>
-                        
+
                     </Item>
                 </Stack>
             </Container>

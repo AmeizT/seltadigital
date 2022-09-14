@@ -15,14 +15,14 @@ export default function Showcase({ showcaseMap }){
     }
 
     const text = {
-        textpos: "start",
+        textpos: "center",
     }
 
     return (
         <StickSector name="Showcase">
             <Item space="var(--sz50) 0 var(--sz70)">
-                <Text fs={18} mute={true}>
-                    Some recent works from 18/{year} that we are proud to showcase.
+                <Text mute={true} textpos="center">
+                    Some recent works from <Text as="span" fw={70}>17-{year}</Text> that we&apos;re happy to showcase.
                 </Text>
             </Item>
 
@@ -61,18 +61,18 @@ export default function Showcase({ showcaseMap }){
                                                 </Item>
                                             </Item>
 
-                                            <Item move="y" pt="var(--sz50)">
-                                                <Text fs={18} fw={60} prefs="lower">
+                                            <Item move="y" space="var(--sz50)">
+                                                <Tiny {...text} fs={10} space="var(--sz50) 0" mute={true} prefs="upper">
+                                                    {showcase.category}
+                                                </Tiny>
+
+                                                <Text textpos="center">
                                                     {showcase.content.length > 199 ? `${showcase.content.slice(0, 199)}[...]` : 
                                                     showcase.content}
                                                 </Text>
-
-                                                <Tiny fs={10} pt="var(--sz50)" mute={true} prefs="upper">
-                                                    {showcase.category}
-                                                </Tiny>
                                             </Item>
 
-                                            <Item space="var(--sz50) 0">
+                                            <Item view="none" space="var(--sz50) 0">
                                                 <Button fw={70} space="var(--sz20) 0" bb="2px dotted var(--dark40)" hue="var(--dark40)">
                                                     {showcase.action}&nbsp;
                                                     <Icon size={24} hex="#fff">

@@ -34,8 +34,8 @@ export default function Hero(){
                             We build, solve and satisfy.
                         </Headtext>
 
-                        <Text {...snow} fs={18} leading={1.5} pt="var(--sz60)">
-                            We are a team of talented remote web development magicians building some &quot;wow&quot; apps & experiences on the web.
+                        <Text {...snow} leading={1.75} pt="var(--sz60)">
+                            We are a team of talented remote web development magicians building some <Text as="span" fw={70}>&quot;wow&quot;</Text> websites, apps & experiences on the web.
                         </Text>
                     </Item>
 
@@ -60,7 +60,7 @@ export default function Hero(){
                         <Button w="100%" space="0" space7x="0" fs={18} fw={70} hue="var(--dark40)">
                             <Stack my="center">
                                 <Item w="fit" pb="var(--sz30)" bb="2px dotted var(--dark40)">
-                                    Talk&apos;s cheap! Here&apos;s some magic.
+                                    Talk&apos;s cheap, Discover!
                                 </Item>
 
                                 <Item w="fit" h="fit" rad="50px" space="var(--sz20)" ms="auto" bg="var(--dark40)">

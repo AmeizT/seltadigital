@@ -5,7 +5,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'discava',
-            content: 'Discava is an ecommerce business specializing in ergonomics, smart home, massage, vr and decor.',
+            content: 'E-commerce business specializing in ergonomics, smart home, massage, vr and more.',
             brand: '#0066b2',
             category: 'e-Commerce',
             action: 'Discover',
@@ -45,7 +45,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'oqpy homes',
-            content: 'Oqpy (occupy) Homes is a real estate app designed, developed & owned by Selta Smart Tech.',
+            content: 'Real estate app directly connects home seekers to landlords.',
             brand: '#00ccb0',
             category: 'Websites',
             action: 'Discover',
@@ -96,7 +96,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'truckire',
-            content: 'Truckire is a logistics & booking app for haulage trucks.',
+            content: 'Truck hire and booking app.',
             brand: '#000000',
             category: 'Websites',
             action: 'Discover',

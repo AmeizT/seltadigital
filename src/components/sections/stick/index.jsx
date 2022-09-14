@@ -3,14 +3,17 @@ import { Container, Strip, Headtext, Item, Sector, Stack } from "../../../@fasto
 export function StickSector({ name, content, children }){
     const textProps = {
         hue: "var(--dark40)",
-        fs3x: "var(--fs3x)", 
+        fs3x: "var(--fs3x)",
+        prefs: "lower",
+        fw: 50, 
         leading: 1,
+        textpos: "center",
     }
 
     return (
         <Sector space="var(--sz70) 0 0">
-            <Container move="y">
-                <Item w="fit" ptop="var(--hs40)" zx={1600}>
+            <Container move="y" space="0">
+                <Item space="0 var(--sz50)" mx="center" ptop="var(--hs40)" zx={1600}>
                     <Headtext {...textProps}>
                         {name}
                     </Headtext>
@@ -19,8 +22,6 @@ export function StickSector({ name, content, children }){
                 <Stack move="y">
                     {children}
                 </Stack>
-
-                <Strip />
             </Container>
         </Sector>
     )
