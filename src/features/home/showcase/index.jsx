@@ -19,11 +19,11 @@ export default function Showcase({ showcaseMap }){
     }
 
     return (
-        <StickSector space="var(--sz70) 0" name="Showcase">
-            <Item>
-                <Headtext hue="var(--gray10)">
-                    18-{year}
-                </Headtext>
+        <StickSector name="Showcase">
+            <Item space="var(--sz50) 0 var(--sz70)">
+                <Text fs={18} mute={true}>
+                    Some recent works from 18/{year} that we are proud to showcase.
+                </Text>
             </Item>
 
             <Item move="y">
@@ -51,14 +51,25 @@ export default function Showcase({ showcaseMap }){
                                                 alt={showcase.name}
                                                 layout="fill"
                                                 objectFit="cover"
+                                                objectPosition={showcase?.pos}
                                                 loader={imageLoader} />
+
+                                                <Item pos="abs" pbase="var(--sz50)" pstart="var(--sz50)" zx={1}>
+                                                    <Headtext fw={70} fs3x="20vw" hue="#ffffff5c" leading={1}>
+                                                        {showcase.name}
+                                                    </Headtext>
+                                                </Item>
                                             </Item>
 
-                                            <Item zx={2} pt="var(--sz50)">
-                                                <Text fw={60} prefs="upper">
+                                            <Item move="y" pt="var(--sz50)">
+                                                <Text fs={18} fw={60} prefs="lower">
                                                     {showcase.content.length > 199 ? `${showcase.content.slice(0, 199)}[...]` : 
                                                     showcase.content}
                                                 </Text>
+
+                                                <Tiny fs={10} pt="var(--sz50)" mute={true} prefs="upper">
+                                                    {showcase.category}
+                                                </Tiny>
                                             </Item>
 
                                             <Item space="var(--sz50) 0">
@@ -68,12 +79,6 @@ export default function Showcase({ showcaseMap }){
                                                         <RiArrowRightUpLine />
                                                     </Icon>
                                                 </Button>
-                                            </Item>
-
-                                            <Item pbase="0" pend="0" zx={1}>
-                                                <Headtext fw={70} fs3x="var(--fs3x)" hue="#ffffff5c" leading={1}>
-                                                    {showcase.name}
-                                                </Headtext>
                                             </Item>
                                         </Stack>
                                     </Container>

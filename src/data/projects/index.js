@@ -17,7 +17,7 @@ const showcase = new Map([
 
                 {
                     id: uuid(),
-                    name: 'Web desgin & development',
+                    name: 'Website desgin & development',
                 },
             ],
             tech: [
@@ -45,9 +45,9 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'oqpy homes',
-            content: 'Oqpy (/ˈɒkjʊpʌɪ/) Homes is a real estate app designed, developed & owned by Selta Smart Tech. The app was built to change the narrative that real estate agents charge home seekers exobitant rates to help them secure decent homes. Oqpy Homes therefore tries to eliminate the middleman [real estate agents] by acting as a virtual agent and promoting direct communication between landlords and tenants.',
+            content: 'Oqpy (occupy) Homes is a real estate app designed, developed & owned by Selta Smart Tech.',
             brand: '#00ccb0',
-            category: 'Web',
+            category: 'Websites',
             action: 'Discover',
             scope: [
                 {
@@ -57,7 +57,7 @@ const showcase = new Map([
 
                 {
                     id: uuid(),
-                    name: 'Web desgin & development',
+                    name: 'Website desgin & development',
                 },
             ],
 
@@ -87,7 +87,9 @@ const showcase = new Map([
                     name: 'Vercel',
                 },
             ],
-            image: "/brands/discava-site.png",
+            pos: "right center",
+            image: "/brands/oqpy.jpg",
+            notes: "The app was built to change the narrative that real estate agents charge home seekers exobitant rates to help them secure decent homes. Oqpy Homes therefore tries to eliminate the middleman [real estate agents] by acting as a virtual agent and promoting direct communication between landlords and tenants.",
             uri: 'https://okkupy.vercel.app',
         },
 
@@ -96,7 +98,7 @@ const showcase = new Map([
             name: 'truckire',
             content: 'Truckire is a logistics & booking app for haulage trucks.',
             brand: '#000000',
-            category: 'Web',
+            category: 'Websites',
             action: 'Discover',
             scope: [
                 {
@@ -106,7 +108,7 @@ const showcase = new Map([
 
                 {
                     id: uuid(),
-                    name: 'Web desgin & development',
+                    name: 'Website desgin & development',
                 },
             ],
             tech: [
@@ -135,7 +137,7 @@ const showcase = new Map([
                     name: 'Vercel',
                 },
             ],
-            image: "/brands/discava-site.png",
+            image: "/brands/truckire.jpg",
             uri: 'https://truckire.vercel.app',
         },]
     ],

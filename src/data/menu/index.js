@@ -3,6 +3,12 @@ import { v4 as uuid } from 'uuid'
 let menu = [
     {
         id: uuid(),
+        name: 'Home',
+        uri: '/',
+    },
+
+    {
+        id: uuid(),
         name: 'Showcase',
         uri: '/showcase',
     },
@@ -29,6 +35,12 @@ let menu = [
         id: uuid(),
         name: 'Shop',
         uri: '/shop',
+    },
+
+    {
+        id: uuid(),
+        name: 'Contact',
+        uri: '/contact',
     },
 ]
 

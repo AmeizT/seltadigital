@@ -7,7 +7,7 @@ export default function Navbar(){
 
     const header = {
         h: "var(--hs30)",
-        pos: "fxd",
+        pos: "rtv",
         my: "center",
         zx: "var(--zx99)",
     }

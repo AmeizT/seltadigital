@@ -6,6 +6,7 @@ export { Item } from './Item'
 export { Sector } from './Sector'
 export { Segment } from './Segment'
 export { Stack } from './Stack'
+export { Strip } from "./Strip"
 export { Wrapper } from "./Wrapper"
 
 

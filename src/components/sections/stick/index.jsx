@@ -1,15 +1,16 @@
-import { Container, Headtext, Item, Sector, Stack } from "../../../@fastor"
+import { Container, Strip, Headtext, Item, Sector, Stack } from "../../../@fastor"
 
 export function StickSector({ name, content, children }){
     const textProps = {
         hue: "var(--dark40)",
         fs3x: "var(--fs3x)", 
+        leading: 1,
     }
 
     return (
-        <Sector space="var(--sz70) 0">
+        <Sector space="var(--sz70) 0 0">
             <Container move="y">
-                <Item w="fit" pos="stk" ptop="var(--hs40)" zx={1600}>
+                <Item w="fit" ptop="var(--hs40)" zx={1600}>
                     <Headtext {...textProps}>
                         {name}
                     </Headtext>
@@ -18,6 +19,8 @@ export function StickSector({ name, content, children }){
                 <Stack move="y">
                     {children}
                 </Stack>
+
+                <Strip />
             </Container>
         </Sector>
     )
