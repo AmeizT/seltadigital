@@ -15,14 +15,8 @@ let menu = [
 
     {
         id: uuid(),
-        name: 'Read & Learn',
+        name: 'Read n Learn',
         uri: '/learn',
-    },
-
-    {
-        id: uuid(),
-        name: 'Estimator',
-        uri: '/estimator',
     },
 
     {

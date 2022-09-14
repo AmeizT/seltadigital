@@ -21,9 +21,9 @@ export default function Showcase({ showcaseMap }){
     return (
         <StickSector name="Showcase">
             <Item space="var(--sz50) 0 var(--sz70)">
-                <Text mute={true} textpos="center">
-                    Some recent works from <Text as="span" fw={70}>17-{year}</Text> that we&apos;re happy to showcase.
-                </Text>
+                <Tiny fs={16} mute={true} leading={1.2}>
+                    Featured projects <br />that we&apos;re happy to showcase.
+                </Tiny>
             </Item>
 
             <Item move="y">
@@ -42,10 +42,10 @@ export default function Showcase({ showcaseMap }){
 
                         <Segment move="y" gap="var(--sz40) 0">
                             {showcase[1].map(showcase => (
-                                <Card key={showcase.id} as="article" pos="rtv" mb="var(--sz70)">
+                                <Card key={showcase.id} as="article" mb="var(--sz70)">
                                     <Container space="0">
                                         <Stack move="y">
-                                            <Item h="50vh" pos="rtv" imgFilter="grayscale(100%)">
+                                            <Item w="100%" h="44vh" pos="rtv" pstart="0" imgRad="var(--sz60)" imgFilter="grayscale(80%)">
                                                 <Image
                                                 src={showcase.image}
                                                 alt={showcase.name}
@@ -61,12 +61,12 @@ export default function Showcase({ showcaseMap }){
                                                 </Item>
                                             </Item>
 
-                                            <Item move="y" space="var(--sz50)">
-                                                <Tiny {...text} fs={10} space="var(--sz50) 0" mute={true} prefs="upper">
+                                            <Item move="y" space="var(--sz50) 0">
+                                                <Tiny fs={10} space="var(--sz50) 0" mute={true} prefs="upper">
                                                     {showcase.category}
                                                 </Tiny>
 
-                                                <Text textpos="center">
+                                                <Text leading="1.5">
                                                     {showcase.content.length > 199 ? `${showcase.content.slice(0, 199)}[...]` : 
                                                     showcase.content}
                                                 </Text>

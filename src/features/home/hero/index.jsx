@@ -34,7 +34,7 @@ export default function Hero(){
                             We build, solve and satisfy.
                         </Headtext>
 
-                        <Text {...snow} leading={1.75} pt="var(--sz60)">
+                        <Text {...snow} leading={1.5} pt="var(--sz60)">
                             We are a team of talented remote web development magicians building some <Text as="span" fw={70}>&quot;wow&quot;</Text> websites, apps & experiences on the web.
                         </Text>
                     </Item>
@@ -56,11 +56,13 @@ export default function Hero(){
                         </List>
                     </Item>
 
-                    <Item pt="var(--sz60)">
+                    <TechStack stacks={stacks} />
+                    
+                    <Item pb="var(--sz90)">
                         <Button w="100%" space="0" space7x="0" fs={18} fw={70} hue="var(--dark40)">
                             <Stack my="center">
-                                <Item w="fit" pb="var(--sz30)" bb="2px dotted var(--dark40)">
-                                    Talk&apos;s cheap, Discover!
+                                <Item w="fit" pb="var(--sz30)">
+                                    Talk&apos;s cheap! See for yourself.
                                 </Item>
 
                                 <Item w="fit" h="fit" rad="50px" space="var(--sz20)" ms="auto" bg="var(--dark40)">
@@ -72,8 +74,6 @@ export default function Hero(){
                         </Button>
                     </Item>
                 </Stack>
-
-                <TechStack stacks={stacks} />
 
                 <Stack viewon="desk"></Stack>
 

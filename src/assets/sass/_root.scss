@@ -195,9 +195,13 @@ p, pre, small, span, time {
     margin: 0;
 }
 
+p {
+    line-height: 1.5;
+}
+
 h1, h2, h3 {
     font-weight: 800;
-    font-feature-settings: "ss01";
+    font-feature-settings: "ss02";
 }
 
 input, select, textarea {

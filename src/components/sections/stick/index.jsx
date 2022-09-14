@@ -5,15 +5,14 @@ export function StickSector({ name, content, children }){
         hue: "var(--dark40)",
         fs3x: "var(--fs3x)",
         prefs: "lower",
-        fw: 50, 
+        fw: 70, 
         leading: 1,
-        textpos: "center",
     }
 
     return (
         <Sector space="var(--sz70) 0 0">
-            <Container move="y" space="0">
-                <Item space="0 var(--sz50)" mx="center" ptop="var(--hs40)" zx={1600}>
+            <Container move="y">
+                <Item space="0">
                     <Headtext {...textProps}>
                         {name}
                     </Headtext>

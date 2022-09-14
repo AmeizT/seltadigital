@@ -5,7 +5,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'discava',
-            content: 'E-commerce business specializing in ergonomics, smart home, massage, vr and more.',
+            content: 'Online store specializing in ergonomics, smart home, massage, vr and more.',
             brand: '#0066b2',
             category: 'e-Commerce',
             action: 'Discover',
@@ -45,7 +45,7 @@ const showcase = new Map([
         {
             id: uuid(),
             name: 'oqpy homes',
-            content: 'Real estate app directly connects home seekers to landlords.',
+            content: 'Real estate app that directly connects homeseekers to landlords.',
             brand: '#00ccb0',
             category: 'Websites',
             action: 'Discover',

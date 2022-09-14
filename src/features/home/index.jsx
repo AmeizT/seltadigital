@@ -10,7 +10,6 @@ export function Home(){
         <React.Fragment>
             <Hero />
             <Showcase showcaseMap={showcaseMap} />
-            <Estimator />
         </React.Fragment>
     )
 }
