@@ -1,5 +1,7 @@
 import { useMenu } from "../../data/menu"
 import Deskbar from "./deskbar"
+import PhoneBar from "./phonebar"
+import Dotbar from "./dotbar"
 import { Container, Header } from "../../@fastor"
 
 export default function Navbar(){
@@ -7,7 +9,7 @@ export default function Navbar(){
 
     const header = {
         h: "var(--hs30)",
-        pos: "rtv",
+        pos: "fxd",
         my: "center",
         zx: "var(--zx99)",
     }
@@ -15,6 +17,7 @@ export default function Navbar(){
     return (
         <Header {...header}>
             <Container>
+                <PhoneBar />
                 <Deskbar menu={menu} />
             </Container>
         </Header>

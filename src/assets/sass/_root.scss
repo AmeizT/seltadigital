@@ -82,7 +82,7 @@
     --fs32: #{func.pxtorem(32)};
     --fs48: #{func.pxtorem(48)};
     --fs60: #{func.pxtorem(60)};
-    --fs3x: #{func.pxtovw(60, 412)};
+    --fs3x: #{func.pxtovw(110, 575.98)};
     --fs5x: #{func.pxtovw(50, 768)};
     --fs7x: #{func.pxtovw(100, 412)};
     --hs30: #{func.pxtorem(50)};
@@ -201,7 +201,7 @@ p {
 
 h1, h2, h3 {
     font-weight: 800;
-    font-feature-settings: "ss02";
+    font-feature-settings: "ss01", "ss03";
 }
 
 input, select, textarea {

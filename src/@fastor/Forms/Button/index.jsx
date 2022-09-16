@@ -1,5 +1,5 @@
 import styled, {css} from 'styled-components'
-import { Base, Border, Radius, Space, Typography } from '../../Common'
+import { Base, Border, Radius, Space, Typography } from '../../@root'
 
 export const Button = styled.button.attrs({
     role: 'button',
@@ -17,7 +17,12 @@ export const Button = styled.button.attrs({
     ${Radius}
     ${Space}
     ${Typography}
+    color: ${props => props.hue || "var(--dark40)"};
+    @media(prefers-color-scheme: dark){
+        color: ${props => props.hued || "var(--snow20)"};
+    }
     transition: 100ms background ease-in-out;
+
 
     &[data-cart-count]::before {
         content: attr(data-cart-count);
@@ -70,6 +75,53 @@ export const Button = styled.button.attrs({
         @media(prefers-color-scheme: dark){
             color: var(--gray20);
             background: var(--dark50);
+        }
+    }
+
+    &[data-avatar].grow {
+        padding: var(--sz20);
+        border: 2px solid var(--sky);
+        transition: border 100ms ease-in;
+    }
+
+    &[data-avatar].shrink {
+        border: none;
+        transition: border 100ms ease-in;
+    }
+
+    &[data-tab].active {
+        border-radius: 0;
+        font-weight: 700;
+        color: var(--sky);
+        border-bottom: 2px solid var(--sky);
+        transition: border 100ms ease-in;
+        @media(prefers-color-scheme: dark){
+            color: var(--sky);
+        }
+    }
+
+    &[data-tab].inactive {
+        border-radius: 0;
+        border-bottom: 3px solid transparent;
+        transition: border 100ms ease-out;
+    }
+
+    &[data-accent].active {
+        color: var(--snow10);
+        background: #ffffff5c;
+        transition: background 100ms ease-in;
+        @media(prefers-color-scheme: dark){
+            color: var(--sky);
+        }
+    }
+
+    &[data-accent].inactive {
+        color: var(--snow10);
+        background: #0000005c;
+        transition: background 100ms ease-in;
+        @media(prefers-color-scheme: dark){
+            color: var(--snow20);
+            background: var(--dark60);
         }
     }
 `

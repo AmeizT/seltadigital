@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Base, Radius, Space } from '../../Common'
+import { Base, Radius, Space } from '../../@root'
 
 export const Radio = styled.input.attrs({
     type: 'radio',

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Base, Radius, Space, Typography } from '../../Common'
+import { Base, Radius, Space, Typography } from '../../@root'
 
 export const Select = styled.select.attrs(props => ({
     placeholder: props.faker,

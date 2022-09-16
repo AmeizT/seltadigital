@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Base, Border, Radius, Space } from '../../Common'
+import { Base, Border, Radius, Space } from '../../@root'
 
 export const Drawer = styled.dialog`
     ${Base}
@@ -20,14 +20,14 @@ export const Drawer = styled.dialog`
     &.active {
         opacity: 1;
         visibility: visible;
-        transform: translateX(0);
-        transition: transform 300ms var(--easeInOut077);
+        transform: translate(0, 0);
+        transition: transform 500ms var(--easeInOut077);
     }
 
     &.inactive {
         opacity: 0;
-        transform: translateX(-100%);
-        transition: transform 300ms ease-out;
+        transform: translate(100%, 0);
+        transition: transform 500ms, opacity 300ms, ease-out;
     }
 
     &[open] {
