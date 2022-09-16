@@ -1,6 +1,0 @@
-export { Base } from './@main'
-export { Border } from './borders'
-export { Input } from './input'
-export { Radius } from './radius'
-export { Space } from './spaces'
-export { Typography } from './text'

@@ -1,1 +1,0 @@
-export { useObject } from "./object"

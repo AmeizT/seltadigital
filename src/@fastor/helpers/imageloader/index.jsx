@@ -1,1 +1,0 @@
-export const imageLoader = ({ src, width, quality }) => `${src}?w=${width}&q=${quality || 100}`
