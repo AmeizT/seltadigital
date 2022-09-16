@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import { List, ListItem, Nav, NavLink } from "../../../../.next/@fastor"
+import { List, ListItem, Nav, NavLink } from "../../../@fastor"
 
 export default function Deskbar({ menu }){
     const [active, setActive] = React.useState(0)

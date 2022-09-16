@@ -1,4 +1,4 @@
-import { Item, List, ListItem } from "../../../../.next/@fastor"
+import { Item, List, ListItem } from "../../../@fastor"
 
 export default function Dotbar(){
     const numbers = [1, 2, 3, 4, 5]

@@ -1,4 +1,4 @@
-import { Container, Headtext, Item, Segment, Stack, Text } from "../../../../.next/@fastor"
+import { Container, Headtext, Item, Segment, Stack, Text } from "../../../@fastor"
 
 export default function Hero(){
     const headtext = {

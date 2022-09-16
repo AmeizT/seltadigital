@@ -1,4 +1,4 @@
-import { Button, Hamburger, Item, List, ListItem, NavLink, Tiny } from "../../../../.next/@fastor"
+import { Button, Hamburger, Item, List, ListItem, NavLink, Tiny } from "../../../@fastor"
 
 export default function PhoneBar(){
     const numbers = [1, 2, 3, 4]

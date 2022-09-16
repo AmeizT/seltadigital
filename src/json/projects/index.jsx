@@ -6,7 +6,7 @@ let projects = [
         name: 'discava',
         content: 'Discava Store is an online store specializing in ergonomics, massage, smart home, vr & solar gadgets.',
         brand: '#0066b2',
-        category: 'e-Commerce',
+        category: 'eCommerce',
         action: 'Explore',
         scope: [
             {
