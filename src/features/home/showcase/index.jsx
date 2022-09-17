@@ -1,10 +1,10 @@
 import { Container, Headtext, Item, Segment, Stack, Text, Tiny } from "../../../@fastor"
 
-export default function Hero({ count }){
+export default function Showcase({ count }){
     const headtext = {
         textpos: "start",
         fs3x: "var(--fs3x)",
-        leading: 1,
+        leading: 0.8,
         prefs: "lower",
     }
 
@@ -18,27 +18,25 @@ export default function Hero({ count }){
         pos: "fxd",
         pstart: 0,
         ptop: 0,
+        space: "var(--hs50) 0 0"
     }
 
     return (
-        <Segment {...section} data-active={count === 0 ? "active" : "inactive"}>
-            <Container h="100%" pos="rtv" my="center">
+        <Segment {...section} data-active={count === 1 ? "active" : "inactive"}>
+            <Container h="100%" pos="rtv">
                 <Stack>
                     <Item move="y">
                         <Headtext {...headtext}>
                             <Text as="span">
-                                Build.
-                            </Text><br />
+                                show
+                            </Text>
                             <Text as="span" {...stroke}>
-                                Solve.
-                            </Text><br />
-                            <Text as="span">
-                                Satisfy.
+                                case.
                             </Text>
                         </Headtext>
 
                         <Tiny pt="var(--sz60)" fs={12} prefs="upper">
-                            We are a team of talented web development magicians working remotely to build satisfying digital experiences on the web.
+                            What we have created in the past.
                         </Tiny>
                     </Item>
                 </Stack>

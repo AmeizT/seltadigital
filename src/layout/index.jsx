@@ -8,7 +8,6 @@ export default function BaseLayout({ children }){
         <React.Fragment>
             <Navbar />
             <Content>{children}</Content>
-            <Footer />
         </React.Fragment>
     )
 }

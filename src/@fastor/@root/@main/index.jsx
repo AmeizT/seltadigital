@@ -1,4 +1,5 @@
 import { css } from 'styled-components'
+import { slideIn, slideOut } from "../keyframes"
 
 export const Base = css`
     ${(props) => {
@@ -745,5 +746,17 @@ export const Base = css`
 
     &[data-ref="5"] {
         background: var(--grad5);
+    }
+
+    &[data-active="active"]{
+        opacity: 1;
+        visibility: visible;
+        animation: ${slideIn} 800ms ease;
+    }
+
+    &[data-active="inactive"] {
+        opacity: 0;
+        visibility: hidden;
+        animation: ${slideOut} 800ms ease;
     }
 `

@@ -1,7 +1,6 @@
 import { useMenu } from "../../data/menu"
 import Deskbar from "./deskbar"
 import PhoneBar from "./phonebar"
-import Dotbar from "./dotbar"
 import { Container, Header } from "../../@fastor"
 
 export default function Navbar(){

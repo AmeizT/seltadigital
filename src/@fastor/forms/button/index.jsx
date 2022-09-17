@@ -124,4 +124,12 @@ export const Button = styled.button.attrs({
             background: var(--dark60);
         }
     }
+
+    &.active {
+        & svg {
+            scale: 1.3;
+            fill: var(--primary);
+            transition: scale 100ms ease-in-out;
+        }
+    }
 `
