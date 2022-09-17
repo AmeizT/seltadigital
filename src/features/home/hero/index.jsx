@@ -1,10 +1,11 @@
-import { Container, Headtext, Item, Segment, Stack, Text } from "../../../@fastor"
+import { Container, Headtext, Item, Segment, Stack, Text, Tiny } from "../../../@fastor"
 
 export default function Hero(){
     const headtext = {
-        textpos: "center",
+        textpos: "start",
         fs3x: "var(--fs3x)",
         leading: 1,
+        prefs: "lower",
     }
 
     const stroke = {
@@ -23,18 +24,22 @@ export default function Hero(){
         <Segment {...section}>
             <Container h="100%" pos="rtv" my="center">
                 <Stack>
-                    <Item mx="center">
+                    <Item move="y">
                         <Headtext {...headtext}>
                             <Text as="span">
-                                Create
+                                Build.
                             </Text><br />
                             <Text as="span" {...stroke}>
-                                Solve
+                                Solve.
                             </Text><br />
                             <Text as="span">
-                                Satisfy
+                                Satisfy.
                             </Text>
                         </Headtext>
+
+                        <Tiny pt="var(--sz60)" fs={12} prefs="upper">
+                            We are a team of talented web development magicians working remotely to build satisfying digital experiences on the web.
+                        </Tiny>
                     </Item>
                 </Stack>
             </Container>

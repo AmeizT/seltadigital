@@ -12,7 +12,7 @@ export default function PhoneBar(){
         <Item>
             <List mx="between">
                 <ListItem>
-                    <Tiny fs={12} leading={1.25}>
+                    <Tiny fs={12} leading={1.25} prefs="upper">
                         beyond<br />brilliance
                     </Tiny>
                 </ListItem>

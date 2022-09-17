@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
 export const Hamburger = styled.span`
-    width: 36px;
-    height: 1px;
+    width: 40px;
+    height: 2px;
     display: block;
     top: 0;
     background: transparent;
@@ -19,10 +19,10 @@ export const Hamburger = styled.span`
     }
 
     &::after {
-        top: 5px;
+        top: 6px;
     }
 
     &::before {
-        top: -5px;
+        top: -6px;
     }
 `

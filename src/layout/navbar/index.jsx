@@ -8,7 +8,7 @@ export default function Navbar(){
     const menu = useMenu()
 
     const header = {
-        h: "var(--hs30)",
+        h: "var(--hs40)",
         pos: "fxd",
         my: "center",
         zx: "var(--zx99)",
