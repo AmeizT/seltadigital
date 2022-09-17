@@ -693,6 +693,7 @@ export const Base = css`
 
     & img {
         border-radius: ${props => props.imgRad};
+        filter: ${props => props.imgFilter};
     }
 
     &.gradientBorder {

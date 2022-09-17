@@ -2,9 +2,11 @@ import React from "react"
 import Hero from "./hero"
 import Showcase from "./showcase"
 import MagicWand from "./wand"
+import { useShowcase } from "../../data/projects"
 
 export function Home(){
     const max = 3
+    const showcaseMap = useShowcase()
     const [count, setCount] = React.useState(0)
     const [tapped, setTapped] = React.useState(false)
 
@@ -26,7 +28,7 @@ export function Home(){
     return (
         <React.Fragment>
             <Hero count={count} />
-            <Showcase count={count} />
+            <Showcase count={count} showcaseMap={showcaseMap} />
             <MagicWand tapped={tapped} handleCount={handleCount} />
         </React.Fragment>
     )
