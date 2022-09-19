@@ -9,13 +9,17 @@ export function Home(){
     const showcaseMap = useShowcase()
     const [count, setCount] = React.useState(0)
     const [tapped, setTapped] = React.useState(false)
+    const [height, setHeight] = React.useState("100vh")
 
     React.useEffect(() => {
+        const body = document.querySelector("body")
+        setHeight(body.innerHeight)
+        console.log(height)
         const timer = setTimeout(() => {
             tapped && setTapped(false)
         }, 300)
         return () => clearTimeout(timer)
-    }, [tapped, setTapped])
+    }, [tapped, setTapped, setHeight, height])
 
     function handleCount(){
         setTapped(true)

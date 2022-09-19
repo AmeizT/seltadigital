@@ -108,6 +108,7 @@
     --zx40: 400;
     --zx50: 500;
     --zx99: 999;
+    --vh: 7.4px;
 }
 
 *, ::after, ::before {
@@ -138,8 +139,8 @@ html {
 body {
     width: 100%;
     height: 100%;
-    min-width: 320px;
-    min-height: 360px;
+    min-width: 360px;
+    min-height: 740px;
     margin: 0;
     font: normal 20px var(--ffBase);
     color: var(--dark40);
@@ -152,6 +153,10 @@ body {
     text-rendering: optimizeSpeed;
     -webkit-font-smoothing: antialiased;
     -webkit-tap-highlight-color: transparent;
+}
+
+#__next {
+    height: 100%;
 }
 
 img,

@@ -2,7 +2,7 @@ import { Box } from "../../@fastor"
 
 export default function Content({ children }){
     const main = {
-        mh: "100vh",
+        h: "100%",
         as: "main",
         pos: "rtv",
         move: "y",
