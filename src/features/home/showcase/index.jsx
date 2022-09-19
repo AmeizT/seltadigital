@@ -8,7 +8,7 @@ export default function Showcase({ count, showcaseMap }){
     const headtext = {
         textpos: "start",
         fs3x: "var(--fs3x)",
-        leading: 0.8,
+        leading: 1,
         prefs: "lower",
     }
 
@@ -20,10 +20,9 @@ export default function Showcase({ count, showcaseMap }){
     const section = {
         h: "100%",
         pos: "fxd",
+        space: "calc(var(--hs40) + var(--sz70)) 0 0",
         pstart: 0,
         ptop: 0,
-        space: "var(--hs50) 0 0",
-        oy: "scroll",
     }
 
     return (
@@ -33,20 +32,20 @@ export default function Showcase({ count, showcaseMap }){
                     <Item move="y">
                         <Headtext {...headtext}>
                             <Text as="span">
-                                show
-                            </Text>
+                                featured&nbsp;
+                            </Text><br />
                             <Text as="span" {...stroke}>
-                                case.
+                                projects.
                             </Text>
                         </Headtext>
 
-                        <Tiny pt="var(--sz50)" prefs="upper">
-                            Works we&apos;ve done in the past <br />that we&apos;re proud to show off...
+                        <Tiny pt="var(--sz60)" prefs="upper">
+                            We had the opportunity to work with some amazing brands & people over the past few years. These are some works we&apos;ve done in the past that we&apos;re proud to show off...
                         </Tiny>
                     </Item>
                 </Stack>
 
-                <Stack move="y" mt="var(--sz70)">
+                <Stack move="y" mt="var(--sz70)" view="none">
                     {showcase.map((showcase, key) => (
                     <React.Fragment key={key}>
                         {showcase[1].map(showcase => (

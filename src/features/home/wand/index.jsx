@@ -8,13 +8,22 @@ export default function MagicWand({ tapped, handleCount }){
         w: "fit", 
         pos: "fxd", 
         pend: "var(--sz50)", 
-        pbase: "var(--sz70)",
+        pbase: "var(--sz50)",
+    }
+
+    const buttonProps = {
+        rad: "50px",
+        space: "var(--sz50)",
+        bg: "#ffffff",
+        shadow: "var(--shadow)",
     }
 
     return (
         <Item {...wand}>
-            <Button className={tapped && "active"} onClick={() => handleCount()}>
-                <Icon size="24px">
+            <Button
+            {...buttonProps} 
+            className={tapped && "active"} onClick={() => handleCount()}>
+                <Icon size="28px" hue="var(--dark40)">
                     <VscWand />
                 </Icon>
             </Button>

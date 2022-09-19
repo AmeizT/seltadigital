@@ -2,24 +2,22 @@ import React from "react"
 import Hero from "./hero"
 import Showcase from "./showcase"
 import MagicWand from "./wand"
+import PianoBar from "./piano"
 import { useShowcase } from "../../data/projects"
 
 export function Home(){
     const max = 3
+    const pianoKeys = Array.from({ length: 5 }, (v, k) => k)
     const showcaseMap = useShowcase()
     const [count, setCount] = React.useState(0)
     const [tapped, setTapped] = React.useState(false)
-    const [height, setHeight] = React.useState("100vh")
 
     React.useEffect(() => {
-        const body = document.querySelector("body")
-        setHeight(body.innerHeight)
-        console.log(height)
         const timer = setTimeout(() => {
             tapped && setTapped(false)
         }, 300)
         return () => clearTimeout(timer)
-    }, [tapped, setTapped, setHeight, height])
+    }, [tapped, setTapped])
 
     function handleCount(){
         setTapped(true)
@@ -34,6 +32,7 @@ export function Home(){
             <Hero count={count} />
             <Showcase count={count} showcaseMap={showcaseMap} />
             <MagicWand tapped={tapped} handleCount={handleCount} />
+            <PianoBar count={count} />
         </React.Fragment>
     )
 }

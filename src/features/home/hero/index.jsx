@@ -16,13 +16,14 @@ export default function Hero({ count }){
     const section = {
         h: "100%",
         pos: "fxd",
+        space: "calc(var(--hs40) + var(--sz70)) 0 0",
         pstart: 0,
         ptop: 0,
     }
 
     return (
         <Segment {...section} data-active={count === 0 ? "active" : "inactive"}>
-            <Container h="100%" pos="rtv" my="center">
+            <Container h="100%" pos="rtv">
                 <Stack>
                     <Item move="y">
                         <Headtext {...headtext}>
@@ -37,9 +38,9 @@ export default function Hero({ count }){
                             </Text>
                         </Headtext>
 
-                        <Tiny pt="var(--sz60)" fs={12} prefs="upper">
-                            We are a team of talented web development magicians working remotely to build satisfying digital experiences on the web.
-                        </Tiny>
+                        <Text pt="var(--sz60)" fs="var(--fs24)" leading={1.25}>
+                            A team of talented magicians building satisfying digital solutions.
+                        </Text>
                     </Item>
                 </Stack>
             </Container>

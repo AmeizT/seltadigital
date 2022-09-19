@@ -126,8 +126,10 @@ export const Button = styled.button.attrs({
     }
 
     &.active {
+        scale: 1.1;
+        transition: scale 100ms ease-in-out;
         & svg {
-            scale: 1.3;
+            scale: 1.1;
             fill: var(--primary);
             transition: scale 100ms ease-in-out;
         }
